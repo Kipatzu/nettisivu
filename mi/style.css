@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html *
+{
+  font-family : "Dejavu Serif", serif;
+}
+
+body {
+  margin: 25px;
+}
+
+section {
+  border-style: groove;
+  border-color: black;
+  max-width: 100%;
+}
+
+.container1 {
+  float: right;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 5rem;
+}
+
+h1 {
+  text-align: center;
+  height: 1.5rem;
+  margin: 2rem;
+}
+
+h2
+{
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.leipa1
+{
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.leipapieni
+{
+  font-size: 1.1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+#ul_topnavi {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: bisque;
+}
+
+#ul_topnavi li {
+  padding: 0.3rem;
+  height: 3.5%;
+  font-size: 125%;
+  margin-right: 0.5rem;
+  overflow: hidden;
+}
+.valiviiva {
+  height: 100%;
+  color: black;
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+ul.kansiolista {
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 5rem;
+  padding-bottom: 1rem;
+  border-style: groove;
+  border-color: black;
+  border-width: 0.5rem;
+  background-color: bisque;
+  font-size: 110%;
+  height: max-content;
+}
+
+.aliteksti1
+{
+  padding-left: 1rem;
+}
+
+.kuvalaatikko
+{
+flex-direction: row;
+flex-wrap: wrap;
+display: flex;
+justify-content: left;
+text-align: center;
+font-weight: bold;
+font-size: 1.2rem;
+width: max-content;
+max-width: 100%;
+
+}
+
+.gallery
+{
+  max-width: 100%;
+  padding-right: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  padding-left: 5rem;
+}
+
+.kokolaatikko
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  margin-left: 1rem;
+  width: 15rem;
+  margin-bottom: 1.5rem;
+}
+
+.kuvateksti
+{
+  display: inline;
+  text-align: center;
+  font-weight: normal;
+}
+
+.Mallitaulukko
+{
+  display: inline;
+  text-align: center;
+}
+
+.taulukko
+{
+  border-style: dotted;
+  border-width: 0.3rem;
+  width: max-content;
+}
+
+.alkio1
+{
+  border-bottom-width: 0.13rem;
+  border-bottom-color: black;
+  border-bottom-style: dashed;
+  font-weight: bold;
+}
+
+.alkio2
+{
+  border-bottom-width: 0.13rem;
+  border-bottom-color: black;
+  border-bottom-style: dashed;
+  border-collapse: collapse;
+}
+
+.alaviiva
+{
+  border-right-width: 0.13rem;
+  border-right-color: black;
+  border-right-style: dashed;
+  text-align: center;
+}
+
+.tekstitaulukko
+{
+  border-right-width: 0.13rem;
+  border-right-style: dashed;
+  text-align: center;
+}
+
+
+.alkiot
+{
+font-size: 1.2rem;
+}
+
+.sisalaatikko
+{
+  flex-direction: column;
+  display: flex;
+  margin-left: 5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: max-content;
+}
+
+.leipa2
+{
+margin-bottom: 1rem;
+font-size: 1.2rem;
+}
+
+.leipa3
+{
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.pohjacredit
+{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: bisque;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.taulukkoyksi
+{
+  border-collapse: collapse;
+}
+
+.video
+{
+  max-width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.videoteksti
+{
+  text-align: left;
+  font-weight: bold;
+}
+
+.haku
+{
+  text-align: left;
+  padding-top: 2rem;
+}
+
+/* seuraavassa on esimerkkejä asioista joita voi mediakyselyillä tehdä */
+@media all and ( max-width: 500px ) {
+/* Palautetaan navigointi koko sivun levyiseksi */
+ nav {
+  float: none;
+  width: 100%;
+}
+
+/* rajataan kuvat maksimissaan sivun levyisiksi */
+img {
+ max-width: 100%;
+}
+
+/* piilotetaan koko yläpalkki */
+header {
+  display: none;
+}
+pre {
+ overflow: scroll;
+}
+}
